@@ -3,6 +3,7 @@
 
 //Impresión (puerto serie)
 Serial.begin(9600);
+  // ¡VA EN EL SETUP()!
   // inicializa la comunicación con el puerto serie con 9600 bps
 Serial.print("");
   //imprime en el puerto de serie (la lupita / arduino ide)
