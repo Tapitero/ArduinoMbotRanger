@@ -14,11 +14,11 @@ Serial.println(value);
 //Buzer
 #define BUZZER_PORT                          45
   //Define el puerto por donde hay que enviar la información al buser(45)
-tone(uint8_t _pin, unsigned int frequency, unsigned long duration = 0)
-  //Función que emite por el buzer un solido tiene tres variables
+tone(uint8_t _pin, unsigned int frequency, unsigned long duration = 0);
+  //Función que emite por el buzer un solido tiene tres variables.
     //-> _pin: el puerto del buzer.
     //-> frequency: La frecuencia del sonido que emite.
-    //-> duration: La duration de la nota que emite.
+    //-> duration: La duration de la nota que emite. va de 1000 a 0.
   //¡PONER SIEMPRE UN DELEY PARA DISTINGUIR MEJOR LA NOTA QUE SUENA!
 
 //Sensor de luz
