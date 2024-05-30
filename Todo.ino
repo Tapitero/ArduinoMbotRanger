@@ -14,7 +14,12 @@ Serial.println(value);
 //Buzer
 #define BUZZER_PORT                          45
   //Define el puerto por donde hay que enviar la información al buser(45)
-tone(uint8_t _pin, unsigned int frequency, unsigned long duration = 0);
+MyBuzzer buzzer;
+  //Define una variable buzzer.
+buzzer.setpin(45);
+  //Define el pin del buzzer.
+  //¡SIEMPRE EN EL SETUP!!
+buzzer.tone(uint8_t _pin, unsigned int frequency, unsigned long duration = 0);
   //Función que emite por el buzer un solido tiene tres variables.
     //-> _pin: el puerto del buzer.
     //-> frequency: La frecuencia del sonido que emite.
