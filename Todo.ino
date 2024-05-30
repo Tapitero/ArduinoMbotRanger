@@ -19,9 +19,8 @@ MyBuzzer buzzer;
 buzzer.setpin(45);
   //Define el pin del buzzer.
   //¡SIEMPRE EN EL SETUP!!
-buzzer.tone(uint8_t _pin, unsigned int frequency, unsigned long duration = 0);
+buzzer.tone(unsigned int frequency, unsigned long duration = 0);
   //Función que emite por el buzer un solido tiene tres variables.
-    //-> _pin: el puerto del buzer.
     //-> frequency: La frecuencia del sonido que emite.
     //-> duration: La duration de la nota que emite. va de 1000 a 0.
   //¡PONER SIEMPRE UN DELEY PARA DISTINGUIR MEJOR LA NOTA QUE SUENA!
